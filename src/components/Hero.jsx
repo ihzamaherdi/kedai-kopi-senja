@@ -28,9 +28,8 @@ const Hero = () => {
       </div>
 
       <div className="hero-image">
-        <div className="coffee-card">
-          <div className="coffee-cup">☕</div>
-          <p>Freshly Brewed</p>
+        <div className="coffee-visual">
+          <div className="coffee-cup-icon">☕</div>
         </div>
       </div>
     </section>
