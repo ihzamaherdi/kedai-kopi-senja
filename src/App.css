@@ -208,32 +208,11 @@ a {
   flex-wrap: wrap;
 }
 
-.hero-image {
-  min-height: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #F5EDE3 0%, #E8D5C4 50%, #D4AF8E 100%);
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 300px 300px 30px 30px;
-  box-shadow: 0 20px 60px rgba(184, 121, 74, 0.2);
-  position: relative;
-  animation: fadeIn 1s ease-out 0.3s both;
-  overflow: hidden;
-}
-
-.coffee-visual {
-  position: relative;
-  text-align: center;
-  animation: float 3s ease-in-out infinite;
-}
-
-.coffee-cup-icon {
-  font-size: 180px;
-  background: linear-gradient(135deg, #B8794A 0%, #8B5A3C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(0 15px 40px rgba(139, 90, 60, 0.3));
 }
 
 @keyframes fadeIn {
@@ -640,7 +619,11 @@ a {
 
 @media (max-width: 900px) {
   .navbar nav {
-    display: none;
+    gap: 24px;
+  }
+
+  .navbar nav a {
+    font-size: 14px;
   }
 
   .hero {
@@ -691,11 +674,19 @@ a {
 
 @media (max-width: 600px) {
   .navbar {
-    padding: 18px 5%;
+    padding: 15px 4%;
   }
 
   .logo {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .navbar nav {
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    font-size: 13px;
   }
 
   .nav-button {

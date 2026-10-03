@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Promo = () => {
   return (
     <section className="promo">

@@ -1,4 +1,4 @@
-import React from 'react';
+import heroImage from '../assets/hero.png';
 
 const Hero = () => {
   return (
@@ -28,9 +28,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-image">
-        <div className="coffee-visual">
-          <div className="coffee-cup-icon">☕</div>
-        </div>
+        <img src={heroImage} alt="Kopi Kedai Senja" className="hero-photo" />
       </div>
     </section>
   );
